@@ -1,19 +1,15 @@
 import { sum, average } from './stats'
+import { expect } from './testLib'
 
 let result = sum([1, 2, 3])
 let expected = 6
+expect(expected).toBe(result)
 
-if(result === expected) {
-  console.log("Ok - The sum() test is passing")
-} else {
-  throw new Error(`X ${result} for sum() is not equal to ${expected}`)
-}
 
 result = average([1, 2, 3])
 expected = 2
+expect(expected).toBe(result)
 
-if (result === expected) {
-  console.log("Ok - The average() test is passing")
-} else {
-  throw new Error(`X ${result} for average() is not equal to ${expected}`)
-}
+
+
+
