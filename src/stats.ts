@@ -5,3 +5,8 @@ function sum(numbers: number[]): number {
 function average(numbers: number[]) {
   return sum(numbers) / numbers.length
 }
+
+export {
+  sum,
+  average
+}
